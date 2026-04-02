@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER — unchanged -->
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="header-logo" aria-label="Team Playback Home">
@@ -30,67 +30,60 @@
   <!-- MAIN -->
   <main class="page-content">
 
-    <!-- HERO -->
-    <section class="hero">
-      <h1 class="hero-headline reveal">Full-Service Video Production. We Handle It All.</h1>
-      <p class="hero-sub reveal reveal-delay-1">Team Playback</p>
-    </section>
+    <!-- SECTION 1: 6 PROJECT TILES — full bleed, edge to edge, no hero above -->
+    <section class="projects-grid-v2" aria-label="Selected work">
 
-    <!-- PROJECT TILES -->
-    <section class="projects-grid" aria-label="Selected work">
-
-      <a href="demo-reel.html" class="project-tile project-tile-featured reveal reveal-delay-1">
-        <img src="images/thumb-demoreel.jpg" alt="Team Playback Demo Reel thumbnail" loading="lazy" width="1280" height="400">
-        <div class="project-tile-overlay">
-          <h2 class="project-tile-title">Team Playback Demo Reel</h2>
+      <a href="behind-the-braves.html" class="tile-v2 reveal">
+        <img src="images/thumb-braves.jpg" alt="Behind The Braves project thumbnail" loading="eager" width="640" height="400">
+        <div class="tile-v2-overlay">
+          <span class="tile-v2-title">Behind The Braves</span>
         </div>
       </a>
 
-      <a href="behind-the-braves.html" class="project-tile reveal reveal-delay-2">
-        <img src="images/thumb-braves.jpg" alt="Behind The Braves project thumbnail" loading="lazy" width="640" height="400">
-        <div class="project-tile-overlay">
-          <h2 class="project-tile-title">Behind The Braves</h2>
+      <a href="florida-aquarium.html" class="tile-v2 reveal">
+        <img src="images/thumb-aquarium.jpg" alt="Florida Aquarium Spot project thumbnail" loading="eager" width="640" height="400">
+        <div class="tile-v2-overlay">
+          <span class="tile-v2-title">Florida Aquarium Spot</span>
         </div>
       </a>
 
-      <a href="florida-aquarium.html" class="project-tile reveal reveal-delay-3">
-        <img src="images/thumb-aquarium.jpg" alt="Florida Aquarium Spot project thumbnail" loading="lazy" width="640" height="400">
-        <div class="project-tile-overlay">
-          <h2 class="project-tile-title">Florida Aquarium Spot</h2>
+      <a href="youngla.html" class="tile-v2 reveal">
+        <img src="images/thumb-youngla.jpg" alt="YoungLA For Her project thumbnail" loading="eager" width="640" height="400">
+        <div class="tile-v2-overlay">
+          <span class="tile-v2-title">YoungLA For Her</span>
         </div>
       </a>
 
-      <a href="youngla.html" class="project-tile reveal reveal-delay-4">
-        <img src="images/thumb-youngla.jpg" alt="YoungLA For Her Black Friday project thumbnail" loading="lazy" width="640" height="400">
-        <div class="project-tile-overlay">
-          <h2 class="project-tile-title">YoungLA For Her</h2>
-        </div>
-      </a>
-
-      <a href="smartpin.html" class="project-tile reveal reveal-delay-5">
+      <a href="smartpin.html" class="tile-v2 reveal">
         <img src="images/thumb-smartpin.jpg" alt="SmartPin Product Release project thumbnail" loading="lazy" width="640" height="400">
-        <div class="project-tile-overlay">
-          <h2 class="project-tile-title">SmartPin Product Release</h2>
+        <div class="tile-v2-overlay">
+          <span class="tile-v2-title">SmartPin Product Release</span>
         </div>
       </a>
 
-      <a href="revelxp.html" class="project-tile reveal reveal-delay-6">
+      <a href="revelxp.html" class="tile-v2 reveal">
         <img src="images/thumb-revelxp.jpg" alt="REVELxp Business Reel project thumbnail" loading="lazy" width="640" height="400">
-        <div class="project-tile-overlay">
-          <h2 class="project-tile-title">REVELxp Business Reel</h2>
+        <div class="tile-v2-overlay">
+          <span class="tile-v2-title">REVELxp Business Reel</span>
         </div>
       </a>
 
-      <a href="florida-funders.html" class="project-tile reveal">
+      <a href="florida-funders.html" class="tile-v2 reveal">
         <img src="images/thumb-funders.jpg" alt="Florida Funders Spring Conference project thumbnail" loading="lazy" width="640" height="400">
-        <div class="project-tile-overlay">
-          <h2 class="project-tile-title">Florida Funders</h2>
+        <div class="tile-v2-overlay">
+          <span class="tile-v2-title">Florida Funders</span>
         </div>
       </a>
 
     </section>
 
-    <!-- FRAMES STRIP -->
+    <!-- SECTION 2: HEADLINE TEXT BLOCK — below tiles, above carousel -->
+    <section class="headline-block">
+      <h1 class="headline-block-title reveal">Full Service Production Team</h1>
+      <p class="headline-block-sub reveal">Team Playback</p>
+    </section>
+
+    <!-- SECTION 3: FRAME CAROUSEL — slowed down -->
     <section class="frames-strip" aria-label="Cinematic stills">
       <div class="frames-track">
         <img src="images/frames/frame-01.jpg" alt="" loading="lazy" height="200">
@@ -114,9 +107,22 @@
       </div>
     </section>
 
+    <!-- SECTION 4: DEMO REEL — standalone cinematic feature -->
+    <section class="demo-reel-feature">
+      <a href="demo-reel.html" class="demo-reel-link reveal">
+        <img src="images/thumb-demoreel.jpg" alt="Team Playback Demo Reel" loading="lazy" width="1920" height="1080">
+        <div class="demo-reel-overlay">
+          <span class="demo-reel-label">View Our Best Work</span>
+          <span class="demo-reel-play" aria-hidden="true">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="31" stroke="white" stroke-width="2" opacity="0.6"/><polygon points="26,20 26,44 46,32" fill="white"/></svg>
+          </span>
+        </div>
+      </a>
+    </section>
+
   </main>
 
-  <!-- FOOTER -->
+  <!-- FOOTER — unchanged -->
   <footer class="site-footer">
     <div class="footer-inner">
       <p class="footer-copy">&copy; 2026 Team Playback</p>
