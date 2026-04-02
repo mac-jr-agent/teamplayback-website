@@ -338,6 +338,12 @@ p { max-width: 65ch; text-wrap: pretty; }
   transform: translateY(0);
 }
 
+/* Featured tile — spans full grid width */
+.project-tile-featured {
+  grid-column: 1 / -1;
+  aspect-ratio: 21 / 9;
+}
+
 /* Touch hover support */
 .project-tile.touch-hover .project-tile-overlay {
   opacity: 1;
