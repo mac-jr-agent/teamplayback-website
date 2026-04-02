@@ -85,7 +85,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   background-image:
-    radial-gradient(ellipse at 50% 30%, rgba(20, 90, 110, 0.04) 0%, transparent 50%);
+    radial-gradient(ellipse at 50% 30%, rgba(160, 40, 20, 0.04) 0%, transparent 50%);
   overflow-x: hidden;
 }
 
@@ -196,7 +196,7 @@ p { max-width: 65ch; text-wrap: pretty; }
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #1a7a8a;
+  background-color: #cc4422;
   transition: width var(--transition-medium);
 }
 
@@ -812,12 +812,12 @@ p { max-width: 65ch; text-wrap: pretty; }
   text-align: center;
   position: relative;
   background:
-    radial-gradient(ellipse at 50% 60%, rgba(20, 100, 120, 0.08) 0%, transparent 65%);
+    radial-gradient(ellipse at 50% 60%, rgba(180, 50, 25, 0.08) 0%, transparent 65%);
 }
 
 .headline-frame {
   display: inline-block;
-  border: 1.5px solid #1a7a8a;
+  border: 1.5px solid #cc4422;
   padding: clamp(var(--space-8), 4vw, var(--space-16)) clamp(var(--space-10), 5vw, var(--space-20));
   position: relative;
 }
@@ -829,7 +829,7 @@ p { max-width: 65ch; text-wrap: pretty; }
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #1a7a8a;
+  background: #cc4422;
 }
 .headline-frame::before {
   top: -5px;
@@ -845,7 +845,7 @@ p { max-width: 65ch; text-wrap: pretty; }
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #1a7a8a;
+  background: #cc4422;
 }
 .frame-corner-bl {
   bottom: -5px;
