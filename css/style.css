@@ -84,6 +84,8 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
+  background-image:
+    radial-gradient(ellipse at 50% 30%, rgba(160, 40, 20, 0.04) 0%, transparent 50%);
   overflow-x: hidden;
 }
 
@@ -136,11 +138,12 @@ p { max-width: 65ch; text-wrap: pretty; }
 }
 
 .header-inner {
+  position: relative;
   max-width: var(--content-max);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -166,7 +169,9 @@ p { max-width: 65ch; text-wrap: pretty; }
   display: flex;
   align-items: center;
   gap: var(--space-8);
-  justify-self: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header-nav a {
@@ -191,7 +196,7 @@ p { max-width: 65ch; text-wrap: pretty; }
   left: 0;
   width: 0;
   height: 1px;
-  background-color: var(--color-text);
+  background-color: #cc4422;
   transition: width var(--transition-medium);
 }
 
@@ -805,11 +810,55 @@ p { max-width: 65ch; text-wrap: pretty; }
 .headline-block {
   padding: clamp(var(--space-16), 8vw, var(--space-32)) var(--gutter);
   text-align: center;
+  position: relative;
+  background:
+    radial-gradient(ellipse at 50% 60%, rgba(180, 50, 25, 0.08) 0%, transparent 65%);
+}
+
+.headline-frame {
+  display: inline-block;
+  border: 1.5px solid #cc4422;
+  padding: clamp(var(--space-8), 4vw, var(--space-16)) clamp(var(--space-10), 5vw, var(--space-20));
+  position: relative;
+}
+
+/* Corner accents — dizpair-inspired */
+.headline-frame::before,
+.headline-frame::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #cc4422;
+}
+.headline-frame::before {
+  top: -5px;
+  left: -5px;
+}
+.headline-frame::after {
+  top: -5px;
+  right: -5px;
+}
+
+/* Bottom corner accents */
+.frame-corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #cc4422;
+}
+.frame-corner-bl {
+  bottom: -5px;
+  left: -5px;
+}
+.frame-corner-br {
+  bottom: -5px;
+  right: -5px;
 }
 
 .headline-block-title {
   font-family: var(--font-display);
-  font-size: var(--text-hero);
+  font-size: clamp(3.2rem, 0.5rem + 7.5vw, 8.5rem);
   text-transform: uppercase;
   color: var(--color-text);
   line-height: 0.95;
@@ -822,6 +871,16 @@ p { max-width: 65ch; text-wrap: pretty; }
   color: var(--color-text-faint);
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  font-weight: 400;
+  max-width: none;
+}
+
+.headline-block-location {
+  margin-top: var(--space-3);
+  font-size: var(--text-xs);
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   font-weight: 400;
   max-width: none;
 }
@@ -850,7 +909,7 @@ p { max-width: 65ch; text-wrap: pretty; }
   height: 100%;
   object-fit: cover;
   transition: transform 0.8s var(--ease-out), filter 0.8s var(--ease-out);
-  filter: brightness(0.7);
+  filter: brightness(0.85);
 }
 
 .demo-reel-overlay {
@@ -863,9 +922,9 @@ p { max-width: 65ch; text-wrap: pretty; }
   gap: var(--space-6);
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.15) 50%,
-    rgba(0, 0, 0, 0.3) 100%
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.08) 50%,
+    rgba(0, 0, 0, 0.15) 100%
   );
   transition: background 0.5s var(--ease-out);
 }
@@ -873,11 +932,12 @@ p { max-width: 65ch; text-wrap: pretty; }
 .demo-reel-label {
   font-family: 'Poppins', sans-serif;
   font-size: clamp(0.85rem, 0.6rem + 0.8vw, 1.15rem);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-text);
-  opacity: 0.9;
+  opacity: 1;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 .demo-reel-play {
@@ -890,7 +950,7 @@ p { max-width: 65ch; text-wrap: pretty; }
 
 .demo-reel-link:hover img {
   transform: scale(1.03);
-  filter: brightness(0.55);
+  filter: brightness(0.7);
 }
 
 .demo-reel-link:hover .demo-reel-play {
@@ -901,9 +961,9 @@ p { max-width: 65ch; text-wrap: pretty; }
 .demo-reel-link:hover .demo-reel-overlay {
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.6) 0%,
-    rgba(0, 0, 0, 0.25) 50%,
-    rgba(0, 0, 0, 0.4) 100%
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.15) 50%,
+    rgba(0, 0, 0, 0.25) 100%
   );
 }
 
