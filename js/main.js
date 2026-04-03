@@ -35,12 +35,15 @@
     const track = document.querySelector('.frames-track');
     if (!track) return;
 
-    // Clone all images for seamless infinite scroll
-    const images = track.querySelectorAll('img');
-    images.forEach((img) => {
-      const clone = img.cloneNode(true);
-      track.appendChild(clone);
-    });
+    // Only clone images for infinite scroll on desktop
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (!isMobile) {
+      const images = track.querySelectorAll('img');
+      images.forEach((img) => {
+        const clone = img.cloneNode(true);
+        track.appendChild(clone);
+      });
+    }
   }
 
   // -------------------------------------------------------
