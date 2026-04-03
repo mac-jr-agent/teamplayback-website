@@ -1060,10 +1060,6 @@ p { max-width: 65ch; text-wrap: pretty; }
   margin: 0 auto;
 }
 
-/* Demo Reel label — same style, constrained width */
-.section-rule--demo {
-  max-width: 1100px;
-}
 
 /* Frames label — tighter to carousel */
 .section-rule--frames {
