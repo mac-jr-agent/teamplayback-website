@@ -1289,3 +1289,73 @@ p { max-width: 65ch; text-wrap: pretty; }
 }
 
 
+/* =========================================================
+   COMBINED CONTACT / DEMO REEL PAGE
+   ========================================================= */
+.contact-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-10) var(--gutter) var(--space-4);
+}
+
+.contact-section:first-child {
+  padding-top: var(--space-12);
+}
+
+.contact-video {
+  background: #111;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  margin-top: var(--space-6);
+}
+
+.contact-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.contact-reel-tagline {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  margin-top: var(--space-8);
+  letter-spacing: 0.02em;
+}
+
+.contact-work {
+  margin-top: var(--space-8);
+  text-align: center;
+}
+
+.contact-body {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  max-width: 55ch;
+  margin: 0 auto;
+}
+
+.contact-location {
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.contact-cta {
+  margin-top: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .contact-video {
+    border-radius: var(--radius-md);
+  }
+}
+
+
