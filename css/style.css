@@ -1290,16 +1290,20 @@ p { max-width: 65ch; text-wrap: pretty; }
 
 
 /* =========================================================
-   COMBINED CONTACT / DEMO REEL PAGE
+   CONTACT / DEMO REEL PAGE
    ========================================================= */
-.contact-section {
-  max-width: 1100px;
+.contact-hero {
+  max-width: 1440px;
   margin: 0 auto;
-  padding: var(--space-10) var(--gutter) var(--space-4);
+  padding: var(--space-12) var(--gutter) var(--space-8);
 }
 
-.contact-section:first-child {
-  padding-top: var(--space-12);
+.contact-hero-desc {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+  max-width: 55ch;
+  margin-top: var(--space-6);
 }
 
 .contact-video {
@@ -1307,7 +1311,7 @@ p { max-width: 65ch; text-wrap: pretty; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   aspect-ratio: 16 / 9;
-  margin-top: var(--space-6);
+  margin-top: var(--space-10);
 }
 
 .contact-video iframe {
@@ -1317,17 +1321,13 @@ p { max-width: 65ch; text-wrap: pretty; }
   display: block;
 }
 
-.contact-reel-tagline {
-  text-align: center;
-  font-family: var(--font-body);
-  font-size: var(--text-lg);
-  color: rgba(255, 255, 255, 0.5);
-  font-style: italic;
-  margin-top: var(--space-8);
-  letter-spacing: 0.02em;
+.contact-work-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--gutter) var(--space-16);
 }
 
-.contact-work {
+.contact-work-content {
   margin-top: var(--space-8);
   text-align: center;
 }
@@ -1340,16 +1340,23 @@ p { max-width: 65ch; text-wrap: pretty; }
   margin: 0 auto;
 }
 
-.contact-location {
-  margin-top: var(--space-6);
+.btn-contact {
+  display: inline-block;
+  margin-top: var(--space-8);
+  padding: 0.55em 1.8em;
   font-size: var(--text-sm);
-  color: #aaaaaa;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
+  color: var(--color-text);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
 }
 
-.contact-cta {
-  margin-top: var(--space-8);
+.btn-contact:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 @media (max-width: 768px) {
