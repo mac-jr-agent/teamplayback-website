@@ -1,5 +1,11 @@
 {
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/payment-cancelled",
+      "destination": "https://tpb-financial-dashboard.vercel.app/payment-cancelled"
+    }
+  ]
 }
