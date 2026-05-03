@@ -6,6 +6,10 @@
     {
       "source": "/payment-cancelled",
       "destination": "https://tpb-financial-dashboard.vercel.app/payment-cancelled"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://tpb-financial-dashboard.vercel.app/_next/:path*"
     }
   ]
 }
