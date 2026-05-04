@@ -4,6 +4,10 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/payment-success",
+      "destination": "https://tpb-financial-dashboard.vercel.app/payment-success"
+    },
+    {
       "source": "/payment-cancelled",
       "destination": "https://tpb-financial-dashboard.vercel.app/payment-cancelled"
     },
